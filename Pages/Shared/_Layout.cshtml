@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TatExpress</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a id="logo" href="Index">TatExpress</a>
+            </div>
+                <div class="navbar-links">
+                    <a id="categor" href="Index"><img src="~/img/Document.png" width="30" height="30"/>Категории</a>
+            </div>
+            <div class="navbar-search">
+                <form>
+                    <input type="text" placeholder="Искать товары" class="search-field">
+                    <button type="submit" class="search-btn">Найти</button>
+                </form>
+            </div>
+            <div class="navbar-links">
+                    <a href="#" id="voiti"><img src="~/img/Profile.png" /> Войти</a>
+                    <a href="#" id="like"><img src="~/img/Heart.png" /> Избранное</a>
+                    <a href="TovarPage" id="korz"><img src="~/img/Buy.png" />Корзина</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="telo">
+        <div class="podval">
+            <div>
+                <p>TatExpress в соцсетях</p>
+                <p>
+                    <img src="~/img/image 1.png" />
+                    <img src="~/img/image 2.png" />
+                    <img src="~/img/image 3.png" />
+                    <img src="~/img/image 4.png" />
+                </p>
+                <p>
+                    Скачать приложение
+                    <br /><img src="~/img/image 5.png" width="125" />
+                    <img src="~/img/image 2 (1).png" width="125" />
+                </p>
+            </div>
+            <div>
+                <p><strong>О нас</strong></p>
+                <p>О компании</p>
+                <p>Вакансии</p>
+                <p>СМИ о нас</p>
+                <p>Контакты</p>
+                <p>Пункты выдачи</p>
+            </div>
+            <div>
+                <p><strong>О нас</strong></p>
+                <p>О компании</p>
+                <p>Вакансии</p>
+                <p>СМИ о нас</p>
+                <p>Контакты</p>
+                <p>Пункты выдачи</p>
+            </div>
+            <div>
+                <p><strong>О нас</strong></p>
+                <p>О компании</p>
+                <p>Вакансии</p>
+                <p>СМИ о нас</p>
+                <p>Контакты</p>
+                <p>Пункты выдачи</p>
+            </div>
+        </div>
+</div>
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - TatExpress - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>*@
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
